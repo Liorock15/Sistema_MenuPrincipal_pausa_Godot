@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://chghyk8cxucrv"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_of5se"]
+[ext_resource type="Texture2D" uid="uid://qeduu25d30mw" path="res://icon.svg" id="1_x0bvd"]
+[ext_resource type="Script" path="res://Menu de pausa.gd" id="3_5powm"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_of5se")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(42.75, 316)
+scale = Vector2(0.410156, 0.453125)
+texture = ExtResource("1_x0bvd")
+
+[node name="Menu de pausa" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("3_5powm")
